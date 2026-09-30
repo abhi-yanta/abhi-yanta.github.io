@@ -1,3 +1,4 @@
+import { asset } from "../lib/asset";
 import { useGSAP } from "@gsap/react";
 import { Center, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
@@ -86,7 +87,7 @@ export const Projects = () => {
             >
               <p>View on GitHub</p>
               <img
-                src="/assets/arrow-up.png"
+                src={asset(asset("/assets/arrow-up.png"))}
                 className="size-3"
                 alt="Arrow Up"
               />
@@ -99,7 +100,7 @@ export const Projects = () => {
               onClick={() => handleNavigation("previous")}
             >
               <img
-                src="/assets/left-arrow.png"
+                src={asset(asset("/assets/left-arrow.png"))}
                 alt="Left arrow"
                 className="size-4"
               />
@@ -110,7 +111,7 @@ export const Projects = () => {
               onClick={() => handleNavigation("next")}
             >
               <img
-                src="/assets/right-arrow.png"
+                src={asset(asset("/assets/right-arrow.png"))}
                 alt="Right arrow"
                 className="size-4"
               />

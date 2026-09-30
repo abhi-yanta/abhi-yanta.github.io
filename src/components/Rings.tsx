@@ -1,3 +1,4 @@
+import { asset } from "../lib/asset";
 import { useGSAP } from "@gsap/react";
 import { Center, useTexture } from "@react-three/drei";
 import gsap from "gsap";
@@ -16,7 +17,7 @@ export const Rings = ({ position }: RingsProps) => {
     }
   }, []);
 
-  const texture = useTexture("/textures/rings.png");
+  const texture = useTexture(asset("/textures/rings.png"));
 
   useGSAP(() => {
     if (refList.current.length === 0) return;

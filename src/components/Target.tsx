@@ -1,3 +1,4 @@
+import { asset } from "../lib/asset";
 import { useGSAP } from "@gsap/react";
 import { useGLTF } from "@react-three/drei";
 import type { ThreeElements } from "@react-three/fiber";
@@ -7,7 +8,7 @@ import type * as THREE from "three";
 
 export const Target = (props: ThreeElements["mesh"]) => {
   const targetRef = useRef<THREE.Mesh>(null);
-  const { scene } = useGLTF("/models/target.gltf");
+  const { scene } = useGLTF(asset("/models/target.gltf"));
 
   useGSAP(() => {
     if (!targetRef.current) return;

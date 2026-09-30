@@ -1,3 +1,4 @@
+import { asset } from "../lib/asset";
 import Globe from "react-globe.gl";
 
 import { Button } from "../components/Button";
@@ -9,7 +10,7 @@ export const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/grid1.png"
+              src={asset(asset("/assets/grid1.png"))}
               alt="Grid 1"
               className="h-fit w-full object-contain sm:h-[276px]"
             />
@@ -27,7 +28,7 @@ export const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/grid2.png"
+              src={asset(asset("/assets/grid2.png"))}
               alt="Grid 2"
               className="h-fit w-full object-contain sm:w-[276px]"
             />
@@ -50,8 +51,8 @@ export const About = () => {
                 width={326}
                 backgroundColor="rgba(0, 0, 0, 0)"
                 showAtmosphere
-                globeImageUrl="/assets/earth-night.jpg"
-                bumpImageUrl="/assets/earth-topology.png"
+                globeImageUrl={asset(asset("/assets/earth-night.jpg"))}
+                bumpImageUrl={asset(asset("/assets/earth-topology.png"))}
                 labelsData={[
                   {
                     lat: 26.8467,
@@ -83,7 +84,7 @@ export const About = () => {
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/grid3.png"
+              src={asset(asset("/assets/grid3.png"))}
               alt="Grid 3"
               className="h-fit w-full object-contain sm:h-[266px]"
             />
