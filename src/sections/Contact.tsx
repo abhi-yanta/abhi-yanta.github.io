@@ -249,7 +249,7 @@ const ContactForm = () => {
 
           {!isLoading && (
             <img
-              src={asset(asset("/assets/arrow-up.png"))}
+              src={asset("/assets/arrow-up.png")}
               alt="Arrow"
               className="field-btn_arrow"
             />
@@ -265,7 +265,7 @@ export const Contact = () => {
     <section className="my-20 c-space" id="contact">
       <div className="relative flex min-h-screen flex-col items-center justify-center">
         <img
-          src={asset(asset("/assets/terminal.png"))}
+          src={asset("/assets/terminal.png")}
           alt="Terminal"
           className="absolute inset-0 h-full min-h-screen"
         />

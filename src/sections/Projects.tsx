@@ -87,7 +87,7 @@ export const Projects = () => {
             >
               <p>View on GitHub</p>
               <img
-                src={asset(asset("/assets/arrow-up.png"))}
+                src={asset("/assets/arrow-up.png")}
                 className="size-3"
                 alt="Arrow Up"
               />
@@ -100,7 +100,7 @@ export const Projects = () => {
               onClick={() => handleNavigation("previous")}
             >
               <img
-                src={asset(asset("/assets/left-arrow.png"))}
+                src={asset("/assets/left-arrow.png")}
                 alt="Left arrow"
                 className="size-4"
               />
@@ -111,7 +111,7 @@ export const Projects = () => {
               onClick={() => handleNavigation("next")}
             >
               <img
-                src={asset(asset("/assets/right-arrow.png"))}
+                src={asset("/assets/right-arrow.png")}
                 alt="Right arrow"
                 className="size-4"
               />
