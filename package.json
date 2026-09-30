@@ -48,7 +48,7 @@
   "license": "MIT",
   "dependencies": {
     "@gsap/react": "^2.1.2",
-    "@react-three/drei": "^10.4.4",
+    "@react-three/drei": "^10.7.9",
     "@react-three/fiber": "^9.7.0",
     "clsx": "^2.1.1",
     "gsap": "^3.13.0",
